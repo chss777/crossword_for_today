@@ -103,10 +103,10 @@ function checked() {
     }
 }
 
-// tab2.addEventListener('change', (e) => {
-//     if (e.target.value) {
-//         control()
-//     } 
-// });
+tab2.addEventListener('change', (e) => {
+    if (e.target.value) {
+        control()
+    } 
+});
 
 tab2.addEventListener('click', cursor);
