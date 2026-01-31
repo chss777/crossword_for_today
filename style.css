@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#check {
+    display: none;
+    text-align: center;
+    button {
+        width: 70px;
+        height: 30px;
+        border: 1px solid blue;
+        border-radius: 10px;
+        background-color: green;
+        color: #fff;
+        font-size: 10px;
+    }
+}
+
+h4 {
+    display: inline-block;
+}
+
+/* #container {
+    gap: 10%;
+} */
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+
+#tab2 {
+    border-collapse: collapse;
+    & .field {
+        background-color: #fff;
+    }
+    .subhover:hover {
+        opacity: .5;
+    }
+}
+
+td {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000;
+    background-color: #777;
+}
+
+.letters {
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    border: none;
+    resize: none;
+    outline: none;
+    font-weight: bold;
+    overflow: hidden;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        background-color: rgb(0, 179, 255);
+        border: 1px solid red;
+        border-radius: 10%;
+        transition: all .5s;
+    }
+}
+
+.index {
+    position: absolute;
+    font-size: .5rem;
+    padding-left: 1px;
+    color: blue;
+}
+
+#arrows {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    & button {
+        width: 30px;
+        height: 30px;
+        margin: 5px;
+        font-size: 1rem;
+        border: 1px solid blue;
+        border-radius: 2px;
+        color: #00f;
+        background-color: green;
+        &:hover {
+            transform: scale(1.1);
+            opacity: .8;
+            transition: all .3s;
+        }
+    }
+}
+
+/* #joystick {
+    margin: 10px;
+    text-align: center;
+} */
+
+/* .triangle {
+    width: 0;
+    height: 0;
+    margin: 5px;
+}   
+
+#left {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 20px solid green;
+}
+#up {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid green;
+}
+#down {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid green;
+}
+#right {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid green;
+} */
+
+#output {
+    max-width: 640px;
+    margin: 10px;
+}
+
+@media (max-width: 390px) {
+    #container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 391px) and (max-width: 640px) {
+    #container {
+        display: block;
+    }
+    #main {
+        float: left;
+        margin: 5px;
+    }
+    #tab2 {
+        margin: 0;
+        & td {
+            width: 20px;
+            height: 20px;
+        }
+        & .letters {
+            font-size: 1rem;
+        }
+    }
+    #output {
+        font-size: 1.15rem;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 991px) {
+    #main {
+        float: left;
+        margin: 30px;
+    }
+    #tab2 td {
+        width: 24px;
+        height: 24px;
+    }
+    #tab2 .letters {
+        font-size: 1.3rem;
+    }
+    #output {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 440px) {
+    #arrows {
+        display: none;
+    }
+    @media (max-height: 440px) {
+        #arrows {
+            display: flex;
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    #container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 60px;
+    }
+    #tab2 td {
+        width: 36px;
+        height: 36px;
+    }
+    #tab2 .letters {
+        float: none;
+        font-size: 1.5rem;
+    }
+    #output {
+        font-size: 1.5rem;
+    }
+}
+
+h4 {
+    margin: 0;
+}
+
+#hcontent,
+#vcontent {
+    margin-bottom: 7px;
+}
