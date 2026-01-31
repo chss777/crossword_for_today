@@ -1,1 +1,1 @@
-# crossword_for_today
+# crossword_for_today - твой кроссворд на сегодня!
